@@ -7,6 +7,7 @@ Public repository package for the 3LG (Three-Layer Graph) approach.
 - Normative SSOT: `docs/3-layer_graph.md`
 - Non-normative research draft: `docs/3lg_scientific_paper_draft.md`
 - Navigation and document roles: `docs/README.md`
+- SSOT contains a duplicated extended technical section with full diagrams, so it stays self-contained even without the research draft.
 
 `README.md` is intentionally concise and should not duplicate normative rules from SSOT.
 

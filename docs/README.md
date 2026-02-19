@@ -4,6 +4,7 @@
 
 - `3-layer_graph.md` is the **normative SSOT** for 3LG operating behavior.
 - `3lg_scientific_paper_draft.md` is a **research manuscript draft** and is non-normative.
+- `3-layer_graph.md` already contains an extended duplicated technical section with diagrams, so it remains self-contained even if the scientific draft is removed.
 
 If there is any mismatch, follow `3-layer_graph.md`.
 
