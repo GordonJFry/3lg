@@ -1,0 +1,107 @@
+{
+  "decision_candidate": {
+    "alternatives": [
+      {
+        "cons": [],
+        "option_id": "OPT-1",
+        "pros": [],
+        "title": "fix four critical risks in fvg3_long_15m.py now"
+      },
+      {
+        "cons": [],
+        "option_id": "OPT-2",
+        "pros": [],
+        "title": "keep implementation unchanged and only document caveats"
+      },
+      {
+        "cons": [],
+        "option_id": "OPT-3",
+        "pros": [],
+        "title": "fix four critical risks in fvg3_long_15m.py now. Option B: keep implementation unchanged and only document caveats"
+      }
+    ],
+    "assumptions": [],
+    "context": "Option A: fix four critical risks in fvg3_long_15m.py now. Option B: keep implementation unchanged and only document caveats. Recommended: Option A.",
+    "decision": "Decision remains proposed with no final selection yet.",
+    "decision_key": "decision::project::fvg_test::option a fix four critical risks in fvg3 long 15m py now option b keep implementation unchanged and only document",
+    "decision_payload_hash": "6e3abd970e93d611bb673635ae1298bfd54147f81c3fd187d80a1b327d3b3990",
+    "links": [
+      "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW",
+      "TG-TASK-01KHPPX08RR87DEE7FPYNBW3BW"
+    ],
+    "outcome": {
+      "notes": "Decision recorded by commit-decisions.",
+      "status": "proposed",
+      "supersedes": []
+    },
+    "rationale": [
+      "Decision recorded from provided alternatives; rationale details should be expanded if needed."
+    ],
+    "refs": {
+      "artifacts": [],
+      "kg_refs": [
+        "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW"
+      ],
+      "tg_refs": [
+        "TG-TASK-01KHPPX08RR87DEE7FPYNBW3BW"
+      ]
+    },
+    "risks": [
+      "Option A: fix four critical risks in fvg3_long_15m.py now. Option B: keep implementation unchanged and only document caveats. Recommended: Option A."
+    ],
+    "selected_option": "undecided",
+    "tags": [
+      "decision",
+      "alternatives",
+      "outcome:proposed"
+    ],
+    "title": "Option A: fix four critical risks in fvg3_long_15m.py now. Option B: keep implementation unchanged and only document...",
+    "validation": [
+      {
+        "check": "Validate feasibility and impact of selected option undecided before marking accepted.",
+        "status": "pending"
+      }
+    ]
+  },
+  "decision_commit_id": "DECCMT-01KHPPYFJXBXTX3JKYB31RZG1C",
+  "decision_seq": 2,
+  "followup_task_suggestion": {
+    "description": "Select concrete option_id and update decision outcome explicitly.",
+    "tags": [
+      "decision_followup"
+    ],
+    "title": "Finalize proposed decision selection"
+  },
+  "generated_at": "2026-02-17T21:08:52Z",
+  "link_suggestions": [
+    {
+      "confidence": 0.1844,
+      "layer": "KG",
+      "node_id": "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW",
+      "title": "Пользователь попросил изучить скрипт fvg3_long_15m.py и дать экспертную оценку."
+    },
+    {
+      "confidence": 0.225,
+      "layer": "TG",
+      "node_id": "TG-TASK-01KHPPX08RR87DEE7FPYNBW3BW",
+      "title": "Clarify scope and constraints"
+    }
+  ],
+  "source": {
+    "source_digest": "42e983c94c296f254e476eb2817cd83ca139e32575897d0a824fcbc759ce68a6",
+    "source_key": "decision::default",
+    "source_kind": "decision_text",
+    "source_title": "Decision input"
+  },
+  "source_request_hash_norm": "ff3f26a716eb0a9dfc392cbb8b8995b6781475bd8a10495b9c1c37ab9d6bb85a",
+  "source_request_hash_raw": "42e983c94c296f254e476eb2817cd83ca139e32575897d0a824fcbc759ce68a6",
+  "stats": {
+    "alternatives_parsed": 3,
+    "apply_requested": false,
+    "link_suggestions": 2,
+    "selected_option": "undecided"
+  },
+  "warnings": [
+    "Selected option unresolved; outcome remains proposed unless explicitly changed"
+  ]
+}

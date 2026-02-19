@@ -1,0 +1,242 @@
+{
+  "active_tasks": [
+    "TG-TASK-01KHRP46DX01TWYB1XC5RQMJ6V",
+    "TG-TASK-01KHRP46DXRF15ZQ9EWQXMTMNQ",
+    "TG-TASK-01KHRP46DX602W2ZJSSN4DP76R",
+    "TG-TASK-01KHPPX08RR87DEE7FPYNBW3BW",
+    "TG-TASK-01KHPPX08RCMYQRX1GDTEA5YAW",
+    "TG-TASK-01KHPPX08R03YSBN5SWNKN0CPA",
+    "TG-TASK-01KHPPX08RDB7KERD3RFHF21P5",
+    "TG-TASK-01KHPPX08RPF3XA44462A4GSG5",
+    "TG-TASK-01KHPPW6E1CMX4K5DYJB2W19Y7",
+    "TG-TASK-01KHPPW6E1DDQD8S7FXBM7YM6H",
+    "TG-TASK-01KHPPW6E13Q7N20WWTR486DB4"
+  ],
+  "commit_id": "COMMIT-01KHRP4TAK40DARNS3A01T147P",
+  "decision_snapshot": [
+    {
+      "decision": "Select OPT-1: Исправить четыре критичных риска в fvg3_long_15m.py в первую очередь",
+      "id": "RG-DEC-01KHPQ11D9Z2EXTWZEJDKR90T1",
+      "status": "accepted",
+      "title": "Решение по приоритету работ для fvg3_long_15m.py."
+    },
+    {
+      "decision": "Use append-only JSONL node logs as authority and rebuildable indexes as derived artifacts.",
+      "id": "RG-DEC-01KHPPW6E14T450T2984X9R9AM",
+      "status": "accepted",
+      "title": "Use append-only JSONL with derived indexes"
+    }
+  ],
+  "generated_at": "2026-02-18T15:33:20Z",
+  "goal": "Clarify scope and constraints",
+  "knowledge_snapshot": [
+    {
+      "confidence": 0.0,
+      "id": "KG-SOURCE-01KHRP4TACKQP3XR5C07T5EB6A",
+      "summary": "Conversation source used for KG knowledge extraction commits.",
+      "title": "Conversation Source: Conversation input"
+    },
+    {
+      "confidence": 0.72,
+      "id": "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC",
+      "summary": "User requests to decompose monolithic script fvg3_long_15m.py into modular architecture using best practices, preserving full functionality after split. User specifically requests a separate markdown checklist for the split and asks to cover the work with tests.",
+      "title": "User requests to decompose monolithic script fvg3_long_15m.py into modular architecture using..."
+    },
+    {
+      "confidence": 0.0,
+      "id": "KG-SOURCE-01KHPPXPP67N6VZN56PYNT64BE",
+      "summary": "Conversation source used for KG knowledge extraction commits.",
+      "title": "Conversation Source: 3lg_conversation_snapshot.txt"
+    },
+    {
+      "confidence": 0.92,
+      "id": "KG-CONSTRAINT-01KHPPXPP6VBZXCNRE4H3WCJ0V",
+      "summary": "несоответствие заявленной поддержке 1h и парсера main_interval, который принимает только формат Xm.",
+      "title": "несоответствие заявленной поддержке 1h и парсера main_interval, который принимает только форм..."
+    },
+    {
+      "confidence": 0.72,
+      "id": "KG-FACT-01KHPPXPP6K1GSSQ18J1RHKBVK",
+      "summary": "Анализ выявил критичные риски:",
+      "title": "Анализ выявил критичные риски:"
+    },
+    {
+      "confidence": 0.72,
+      "id": "KG-FACT-01KHPPXPP626J95PY728VNRJ2F",
+      "summary": "Пользователь задал обязательный процесс 3LG: использовать initialize-graphs, build-context-pack, plan-into-tasks, commit-knowledge, commit-decisions, review-and-consolidate; JSONL вручную не редактировать; после каждого apply запускать validate_graphs.py.",
+      "title": "Пользователь задал обязательный процесс 3LG: использовать initialize-graphs, build-context-pa..."
+    },
+    {
+      "confidence": 0.72,
+      "id": "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW",
+      "summary": "Пользователь попросил изучить скрипт fvg3_long_15m.py и дать экспертную оценку.",
+      "title": "Пользователь попросил изучить скрипт fvg3_long_15m.py и дать экспертную оценку."
+    },
+    {
+      "confidence": 0.72,
+      "id": "KG-FACT-01KHPPXPP6NDR1K5SWAZK58R75",
+      "summary": "дубли и переопределение методов в FeatureLibrary, из-за чего ранние wrapper-методы затеняются;",
+      "title": "дубли и переопределение методов в FeatureLibrary, из-за чего ранние wrapper-методы затеняются;"
+    },
+    {
+      "confidence": 0.72,
+      "id": "KG-FACT-01KHPPXPP6Z3H7MSF16S8DTJWW",
+      "summary": "недетерминированный порядок сделок из-за as_completed при расчете compounding final_balance;",
+      "title": "недетерминированный порядок сделок из-за as_completed при расчете compounding final_balance;"
+    },
+    {
+      "confidence": 0.72,
+      "id": "KG-FACT-01KHPPXPP6YSQ93XA8N29WX80W",
+      "summary": "потенциальный сбой в multi-symbol режиме из-за добавления None в results и последующего обращения к result['symbol'];",
+      "title": "потенциальный сбой в multi-symbol режиме из-за добавления None в results и последующего обращ..."
+    },
+    {
+      "confidence": 0.0,
+      "id": "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1",
+      "summary": "Treat KG/RG/TG as the source of truth; do not rely on chat transcript for long-term memory.",
+      "title": "Graphs are authoritative memory"
+    },
+    {
+      "confidence": 0.0,
+      "id": "KG-DEFINITION-01KHPPW6E1N5TZAFAAKGE5A7G3",
+      "summary": "Knowledge Graph stores facts, Reasoning Graph stores decisions, Task Graph stores execution state.",
+      "title": "Three-layer graph model"
+    }
+  ],
+  "recent_deltas": [
+    {
+      "change": "added_or_updated",
+      "id": "KG-SOURCE-01KHRP4TACKQP3XR5C07T5EB6A",
+      "layer": "KG"
+    },
+    {
+      "change": "added_or_updated",
+      "id": "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC",
+      "layer": "KG"
+    }
+  ],
+  "task_snapshot": [
+    {
+      "acceptance_criteria": [
+        "A scoped objective statement is recorded in task description",
+        "At least one explicit non-goal or constraint is documented in task inputs"
+      ],
+      "deps": [],
+      "id": "TG-TASK-01KHRP46DX01TWYB1XC5RQMJ6V",
+      "status": "ready",
+      "title": "Clarify scope and constraints"
+    },
+    {
+      "acceptance_criteria": [
+        "Task decomposition contains 3-10 actionable items",
+        "Dependency edges are acyclic and every dependency references a valid task id"
+      ],
+      "deps": [
+        "TG-TASK-01KHRP46DX01TWYB1XC5RQMJ6V"
+      ],
+      "id": "TG-TASK-01KHRP46DXRF15ZQ9EWQXMTMNQ",
+      "status": "ready",
+      "title": "Prepare execution plan and work breakdown"
+    },
+    {
+      "acceptance_criteria": [
+        "Each task has 2-4 measurable acceptance criteria",
+        "Validation report states pass/fail for dependency and DoD quality checks"
+      ],
+      "deps": [
+        "TG-TASK-01KHRP46DXRF15ZQ9EWQXMTMNQ"
+      ],
+      "id": "TG-TASK-01KHRP46DX602W2ZJSSN4DP76R",
+      "status": "ready",
+      "title": "Validate planned tasks and Definition of Done"
+    },
+    {
+      "acceptance_criteria": [
+        "A scoped objective statement is recorded in task description",
+        "At least one explicit non-goal or constraint is documented in task inputs"
+      ],
+      "deps": [],
+      "id": "TG-TASK-01KHPPX08RR87DEE7FPYNBW3BW",
+      "status": "ready",
+      "title": "Clarify scope and constraints"
+    },
+    {
+      "acceptance_criteria": [
+        "Task decomposition contains 3-10 actionable items",
+        "Dependency edges are acyclic and every dependency references a valid task id"
+      ],
+      "deps": [
+        "TG-TASK-01KHPPX08RR87DEE7FPYNBW3BW"
+      ],
+      "id": "TG-TASK-01KHPPX08RCMYQRX1GDTEA5YAW",
+      "status": "ready",
+      "title": "Prepare execution plan and work breakdown"
+    },
+    {
+      "acceptance_criteria": [
+        "Each task has 2-4 measurable acceptance criteria",
+        "Validation report states pass/fail for dependency and DoD quality checks"
+      ],
+      "deps": [
+        "TG-TASK-01KHPPX08RCMYQRX1GDTEA5YAW"
+      ],
+      "id": "TG-TASK-01KHPPX08R03YSBN5SWNKN0CPA",
+      "status": "ready",
+      "title": "Validate planned tasks and Definition of Done"
+    },
+    {
+      "acceptance_criteria": [
+        "A plain-language summary is attached to plan output",
+        "Each task title has a one-sentence explanation understandable by non-developers"
+      ],
+      "deps": [
+        "TG-TASK-01KHPPX08RPF3XA44462A4GSG5"
+      ],
+      "id": "TG-TASK-01KHPPX08RDB7KERD3RFHF21P5",
+      "status": "ready",
+      "title": "Document plan decisions and handoff details"
+    },
+    {
+      "acceptance_criteria": [
+        "Applied TG tasks include origin_plan_id and created_by metadata",
+        "TG index rebuild verification returns pass status"
+      ],
+      "deps": [
+        "TG-TASK-01KHPPX08R03YSBN5SWNKN0CPA"
+      ],
+      "id": "TG-TASK-01KHPPX08RPF3XA44462A4GSG5",
+      "status": "ready",
+      "title": "Apply approved task plan to Task Graph"
+    },
+    {
+      "acceptance_criteria": [
+        "context_pack.latest.json points to newest commit_id",
+        "A timestamped context pack history file is written"
+      ],
+      "deps": [],
+      "id": "TG-TASK-01KHPPW6E1CMX4K5DYJB2W19Y7",
+      "status": "ready",
+      "title": "Maintain Context Pack for each meaningful interaction"
+    },
+    {
+      "acceptance_criteria": [
+        "post_response_commits.jsonl has commit_id per meaningful response",
+        "Each commit entry includes changed node ids"
+      ],
+      "deps": [],
+      "id": "TG-TASK-01KHPPW6E1DDQD8S7FXBM7YM6H",
+      "status": "ready",
+      "title": "Record post-response commits"
+    },
+    {
+      "acceptance_criteria": [
+        "Every conflict record has at least one TG resolution task",
+        "Resolution tasks include tag conflict_resolution"
+      ],
+      "deps": [],
+      "id": "TG-TASK-01KHPPW6E13Q7N20WWTR486DB4",
+      "status": "ready",
+      "title": "Resolve graph conflicts via tagged tasks"
+    }
+  ]
+}

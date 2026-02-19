@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit Knowledge"
+  short_description: "Commit conversation knowledge into KG"
+  default_prompt: "Use $commit-knowledge to extract facts, definitions, constraints, and assumptions from conversation into KG with source provenance and idempotent apply mode."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Context Pack"
+  short_description: "Build deterministic graph context packs"
+  default_prompt: "Use $build-context-pack to assemble a minimal request-time context pack from KG/RG/TG."

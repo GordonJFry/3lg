@@ -1,0 +1,264 @@
+{
+  "candidates": [
+    {
+      "claim_hash": "0058431c71e5d61dc4da13efad53680622eeb82fc5f6566adff3f68b63021ba2",
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "confidence": 0.92,
+          "excerpt": "4) несоответствие заявленной поддержке 1h и парсера main_interval, который принимает только формат Xm.",
+          "source_digest": "a0a2d8a9f43c6f68556f5784d133db8ed714f276e24e9378be0626cefb415638",
+          "source_id": "TEMP-SOURCE",
+          "span": {
+            "end_char": 528,
+            "end_line": 6,
+            "start_char": 426,
+            "start_line": 6
+          }
+        }
+      ],
+      "knowledge_key": "constraint::project::fvg_test::несоответствие заявленной поддержке 1h и парсера main interval который принимает только форм",
+      "links": [],
+      "modal": "must",
+      "polarity": "positive",
+      "relationships": [],
+      "scope": "project::fvg_test",
+      "status": "active",
+      "summary": "несоответствие заявленной поддержке 1h и парсера main_interval, который принимает только формат Xm.",
+      "tags": [
+        "constraint",
+        "conversation_commit",
+        "policy"
+      ],
+      "temp_id": "TEMP-KG-006",
+      "title": "несоответствие заявленной поддержке 1h и парсера main_interval, который принимает только форм...",
+      "topic_key": "несоответствие заявленной поддержке 1h и парсера main interval который принимает только форм",
+      "type": "constraint"
+    },
+    {
+      "claim_hash": "6534aa5b806b37bc9039ef0bd14ce71f53fae7bf6d0b93b5361e851136485e55",
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "confidence": 0.72,
+          "excerpt": "Анализ выявил критичные риски:",
+          "source_digest": "a0a2d8a9f43c6f68556f5784d133db8ed714f276e24e9378be0626cefb415638",
+          "source_id": "TEMP-SOURCE",
+          "span": {
+            "end_char": 110,
+            "end_line": 2,
+            "start_char": 80,
+            "start_line": 2
+          }
+        }
+      ],
+      "knowledge_key": "fact::project::fvg_test::анализ выявил критичные риски",
+      "links": [],
+      "modal": "none",
+      "polarity": "positive",
+      "relationships": [],
+      "scope": "project::fvg_test",
+      "status": "active",
+      "summary": "Анализ выявил критичные риски:",
+      "tags": [
+        "fact",
+        "conversation_commit"
+      ],
+      "temp_id": "TEMP-KG-002",
+      "title": "Анализ выявил критичные риски:",
+      "topic_key": "анализ выявил критичные риски",
+      "type": "fact"
+    },
+    {
+      "claim_hash": "05ab895e0a6f7fa551db03e36bf43ba870ea0290f7dc08d97d6ffd9013273101",
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "confidence": 0.72,
+          "excerpt": "Пользователь задал обязательный процесс 3LG: использовать initialize-graphs, build-context-pack, plan-into-tasks, commit-knowledge, commit-decisions, review-and-consolidate; JSONL вручную не редакт...",
+          "source_digest": "a0a2d8a9f43c6f68556f5784d133db8ed714f276e24e9378be0626cefb415638",
+          "source_id": "TEMP-SOURCE",
+          "span": {
+            "end_char": 784,
+            "end_line": 7,
+            "start_char": 529,
+            "start_line": 7
+          }
+        }
+      ],
+      "knowledge_key": "fact::project::fvg_test::пользователь задал обязательный процесс 3lg использовать initialize graphs build context pa",
+      "links": [],
+      "modal": "none",
+      "polarity": "negative",
+      "relationships": [],
+      "scope": "project::fvg_test",
+      "status": "active",
+      "summary": "Пользователь задал обязательный процесс 3LG: использовать initialize-graphs, build-context-pack, plan-into-tasks, commit-knowledge, commit-decisions, review-and-consolidate; JSONL вручную не редактировать; после каждого apply запускать validate_graphs.py.",
+      "tags": [
+        "fact",
+        "conversation_commit"
+      ],
+      "temp_id": "TEMP-KG-007",
+      "title": "Пользователь задал обязательный процесс 3LG: использовать initialize-graphs, build-context-pa...",
+      "topic_key": "пользователь задал обязательный процесс 3lg использовать initialize graphs build context pa",
+      "type": "fact"
+    },
+    {
+      "claim_hash": "30846114d86fdeb2a1f4738a39a7846b2e39261cbe29fa751f07a2cbc74667b7",
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "confidence": 0.72,
+          "excerpt": "Пользователь попросил изучить скрипт fvg3_long_15m.py и дать экспертную оценку.",
+          "source_digest": "a0a2d8a9f43c6f68556f5784d133db8ed714f276e24e9378be0626cefb415638",
+          "source_id": "TEMP-SOURCE",
+          "span": {
+            "end_char": 79,
+            "end_line": 1,
+            "start_char": 0,
+            "start_line": 1
+          }
+        }
+      ],
+      "knowledge_key": "fact::project::fvg_test::пользователь попросил изучить скрипт fvg3 long 15m py и дать экспертную оценку",
+      "links": [],
+      "modal": "none",
+      "polarity": "positive",
+      "relationships": [],
+      "scope": "project::fvg_test",
+      "status": "active",
+      "summary": "Пользователь попросил изучить скрипт fvg3_long_15m.py и дать экспертную оценку.",
+      "tags": [
+        "fact",
+        "conversation_commit"
+      ],
+      "temp_id": "TEMP-KG-001",
+      "title": "Пользователь попросил изучить скрипт fvg3_long_15m.py и дать экспертную оценку.",
+      "topic_key": "пользователь попросил изучить скрипт fvg3 long 15m py и дать экспертную оценку",
+      "type": "fact"
+    },
+    {
+      "claim_hash": "49aa28cf85277427cfe4398b24eacbbeceb7748600cac98f12ec27a8bd97adda",
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "confidence": 0.72,
+          "excerpt": "2) дубли и переопределение методов в FeatureLibrary, из-за чего ранние wrapper-методы затеняются;",
+          "source_digest": "a0a2d8a9f43c6f68556f5784d133db8ed714f276e24e9378be0626cefb415638",
+          "source_id": "TEMP-SOURCE",
+          "span": {
+            "end_char": 304,
+            "end_line": 4,
+            "start_char": 207,
+            "start_line": 4
+          }
+        }
+      ],
+      "knowledge_key": "fact::project::fvg_test::дубли и переопределение методов в featurelibrary из за чего ранние wrapper методы затеняются",
+      "links": [],
+      "modal": "none",
+      "polarity": "positive",
+      "relationships": [],
+      "scope": "project::fvg_test",
+      "status": "active",
+      "summary": "дубли и переопределение методов в FeatureLibrary, из-за чего ранние wrapper-методы затеняются;",
+      "tags": [
+        "fact",
+        "conversation_commit"
+      ],
+      "temp_id": "TEMP-KG-004",
+      "title": "дубли и переопределение методов в FeatureLibrary, из-за чего ранние wrapper-методы затеняются;",
+      "topic_key": "дубли и переопределение методов в featurelibrary из за чего ранние wrapper методы",
+      "type": "fact"
+    },
+    {
+      "claim_hash": "207d5b474e0ed6025b3fc42dbee523428a30ff2724269b084dccc14a70988bfc",
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "confidence": 0.72,
+          "excerpt": "1) недетерминированный порядок сделок из-за as_completed при расчете compounding final_balance;",
+          "source_digest": "a0a2d8a9f43c6f68556f5784d133db8ed714f276e24e9378be0626cefb415638",
+          "source_id": "TEMP-SOURCE",
+          "span": {
+            "end_char": 206,
+            "end_line": 3,
+            "start_char": 111,
+            "start_line": 3
+          }
+        }
+      ],
+      "knowledge_key": "fact::project::fvg_test::недетерминированный порядок сделок из за as completed при расчете compounding final balance",
+      "links": [],
+      "modal": "none",
+      "polarity": "positive",
+      "relationships": [],
+      "scope": "project::fvg_test",
+      "status": "active",
+      "summary": "недетерминированный порядок сделок из-за as_completed при расчете compounding final_balance;",
+      "tags": [
+        "fact",
+        "conversation_commit"
+      ],
+      "temp_id": "TEMP-KG-003",
+      "title": "недетерминированный порядок сделок из-за as_completed при расчете compounding final_balance;",
+      "topic_key": "недетерминированный порядок сделок из за completed при расчете compounding final balance",
+      "type": "fact"
+    },
+    {
+      "claim_hash": "d2fefc66106025df62f5e7a4e844d095642a317b469d1ebd9482bc6e3c9e1532",
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "confidence": 0.72,
+          "excerpt": "3) потенциальный сбой в multi-symbol режиме из-за добавления None в results и последующего обращения к result['symbol'];",
+          "source_digest": "a0a2d8a9f43c6f68556f5784d133db8ed714f276e24e9378be0626cefb415638",
+          "source_id": "TEMP-SOURCE",
+          "span": {
+            "end_char": 425,
+            "end_line": 5,
+            "start_char": 305,
+            "start_line": 5
+          }
+        }
+      ],
+      "knowledge_key": "fact::project::fvg_test::потенциальный сбой в multi symbol режиме из за добавления none в results и последующего обращ",
+      "links": [],
+      "modal": "none",
+      "polarity": "positive",
+      "relationships": [],
+      "scope": "project::fvg_test",
+      "status": "active",
+      "summary": "потенциальный сбой в multi-symbol режиме из-за добавления None в results и последующего обращения к result['symbol'];",
+      "tags": [
+        "fact",
+        "conversation_commit"
+      ],
+      "temp_id": "TEMP-KG-005",
+      "title": "потенциальный сбой в multi-symbol режиме из-за добавления None в results и последующего обращ...",
+      "topic_key": "потенциальный сбой в multi symbol режиме из за добавления none в results",
+      "type": "fact"
+    }
+  ],
+  "generated_at": "2026-02-17T21:08:22Z",
+  "knowledge_commit_id": "KGCMT-01KHPPXJ3J2SVSBAH16Y3PXCT8",
+  "knowledge_seq": 1,
+  "source": {
+    "source_digest": "a0a2d8a9f43c6f68556f5784d133db8ed714f276e24e9378be0626cefb415638",
+    "source_key": "file::/Users/anatolylobkov/Coding/fvg_test/.generated/3lg_conversation_snapshot.txt",
+    "source_kind": "conversation_file",
+    "source_node_id": null,
+    "source_title": "3lg_conversation_snapshot.txt"
+  },
+  "source_request_hash_norm": "9cfe7946f15b0b26de508fcf633c7d29f25b9d53770298bc90daeb06a1921669",
+  "source_request_hash_raw": "a0a2d8a9f43c6f68556f5784d133db8ed714f276e24e9378be0626cefb415638",
+  "stats": {
+    "apply_requested": false,
+    "conflict_candidates": 0,
+    "dedupe_collapsed": 0,
+    "raw_candidates": 7,
+    "selected_candidates": 7,
+    "statements_scanned": 7
+  },
+  "warnings": []
+}

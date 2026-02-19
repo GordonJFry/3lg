@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "attributes": {
+      "type": "object"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "evidence": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "human_ref": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "links": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "relationships": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "rev": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "starter_key": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "tags": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "title",
+    "created_at",
+    "updated_at",
+    "links",
+    "tags",
+    "rev",
+    "summary",
+    "attributes",
+    "relationships",
+    "evidence",
+    "status"
+  ],
+  "type": "object"
+}

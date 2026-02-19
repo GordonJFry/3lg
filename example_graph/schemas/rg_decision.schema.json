@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "alternatives": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "context": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "decision": {
+      "type": "string"
+    },
+    "human_ref": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "links": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "outcome": {
+      "type": "object"
+    },
+    "rationale": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "rev": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "risks": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "starter_key": {
+      "type": "string"
+    },
+    "tags": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "validation": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "title",
+    "created_at",
+    "updated_at",
+    "links",
+    "tags",
+    "rev",
+    "context",
+    "decision",
+    "rationale",
+    "alternatives",
+    "assumptions",
+    "risks",
+    "validation",
+    "outcome"
+  ],
+  "type": "object"
+}

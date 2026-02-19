@@ -1,0 +1,59 @@
+{
+  "candidates": [
+    {
+      "claim_hash": "ef13813d2646ca9e18a0dd526cebf8d6438026f1e4326b6d51327b572a22dd83",
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "confidence": 0.72,
+          "excerpt": "User requests to decompose monolithic script fvg3_long_15m.py into modular architecture using best practices, preserving full functionality after split. User specifically requests a separate markdo...",
+          "source_digest": "a6f8b0b402cfe0a9210b56a2fc5139689de2a0272a7ddaeb1e5281e5c5569f95",
+          "source_id": "TEMP-SOURCE",
+          "span": {
+            "end_char": 262,
+            "end_line": 1,
+            "start_char": 0,
+            "start_line": 1
+          }
+        }
+      ],
+      "knowledge_key": "fact::project::fvg_test::user requests to decompose monolithic script fvg3 long 15m py into modular architecture using",
+      "links": [],
+      "modal": "none",
+      "polarity": "positive",
+      "relationships": [],
+      "scope": "project::fvg_test",
+      "status": "active",
+      "summary": "User requests to decompose monolithic script fvg3_long_15m.py into modular architecture using best practices, preserving full functionality after split. User specifically requests a separate markdown checklist for the split and asks to cover the work with tests.",
+      "tags": [
+        "fact",
+        "conversation_commit"
+      ],
+      "temp_id": "TEMP-KG-001",
+      "title": "User requests to decompose monolithic script fvg3_long_15m.py into modular architecture using...",
+      "topic_key": "user requests decompose monolithic script fvg3 long 15m py into modular architecture",
+      "type": "fact"
+    }
+  ],
+  "generated_at": "2026-02-18T15:33:20Z",
+  "knowledge_commit_id": "KGCMT-01KHRP4TAAS89GE93C85CMKC6C",
+  "knowledge_seq": 4,
+  "source": {
+    "source_digest": "a6f8b0b402cfe0a9210b56a2fc5139689de2a0272a7ddaeb1e5281e5c5569f95",
+    "source_key": "conversation::default",
+    "source_kind": "conversation_text",
+    "source_node_id": null,
+    "source_title": "Conversation input"
+  },
+  "source_request_hash_norm": "203b3bf716688d044625996417aa24a337ecf2ce3dd789ed7fccfe4825a50218",
+  "source_request_hash_raw": "a6f8b0b402cfe0a9210b56a2fc5139689de2a0272a7ddaeb1e5281e5c5569f95",
+  "stats": {
+    "apply_requested": true,
+    "conflict_candidates": 0,
+    "dedupe_collapsed": 0,
+    "raw_candidates": 1,
+    "selected_candidates": 1,
+    "statements_scanned": 1
+  },
+  "warnings": []
+}

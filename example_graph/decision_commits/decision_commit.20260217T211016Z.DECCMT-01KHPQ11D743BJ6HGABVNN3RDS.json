@@ -1,0 +1,109 @@
+{
+  "decision_candidate": {
+    "alternatives": [
+      {
+        "cons": [
+          "Потребуется дополнительное время на рефакторинг и ретест"
+        ],
+        "option_id": "OPT-1",
+        "pros": [
+          "Повышает воспроизводимость",
+          "Снижает риск искажения ранжирования стратегий",
+          "Стабилизирует multi-symbol запуск"
+        ],
+        "title": "Исправить четыре критичных риска в fvg3_long_15m.py в первую очередь"
+      },
+      {
+        "cons": [
+          "Сохраняет риски нестабильности и недетерминизма",
+          "Ухудшает доверие к результатам"
+        ],
+        "option_id": "OPT-2",
+        "pros": [
+          "Не требует немедленных правок"
+        ],
+        "title": "Оставить код без изменений и только документировать ограничения"
+      }
+    ],
+    "assumptions": [],
+    "context": "Решение по приоритету работ для fvg3_long_15m.py.",
+    "decision": "Select OPT-1: Исправить четыре критичных риска в fvg3_long_15m.py в первую очередь",
+    "decision_key": "decision::fvg3_long_15m::prioritize_critical_fixes",
+    "decision_payload_hash": "4a145608732bf6116f3e58f81875595cd18b5da50f75d1aa0f7a031c1f673e00",
+    "links": [
+      "KG-FACT-01KHPPXPP6Z3H7MSF16S8DTJWW",
+      "KG-FACT-01KHPPXPP6NDR1K5SWAZK58R75",
+      "KG-FACT-01KHPPXPP6YSQ93XA8N29WX80W",
+      "KG-CONSTRAINT-01KHPPXPP6VBZXCNRE4H3WCJ0V",
+      "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW",
+      "TG-TASK-01KHPPX08RR87DEE7FPYNBW3BW"
+    ],
+    "outcome": {
+      "notes": "Decision recorded by commit-decisions.",
+      "status": "accepted",
+      "supersedes": []
+    },
+    "rationale": [
+      "Selected option OPT-1 (Исправить четыре критичных риска в fvg3_long_15m.py в первую очередь) based on provided alternatives."
+    ],
+    "refs": {
+      "artifacts": [],
+      "kg_refs": [
+        "KG-FACT-01KHPPXPP6Z3H7MSF16S8DTJWW",
+        "KG-FACT-01KHPPXPP6NDR1K5SWAZK58R75",
+        "KG-FACT-01KHPPXPP6YSQ93XA8N29WX80W",
+        "KG-CONSTRAINT-01KHPPXPP6VBZXCNRE4H3WCJ0V",
+        "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW"
+      ],
+      "tg_refs": [
+        "TG-TASK-01KHPPX08RR87DEE7FPYNBW3BW"
+      ]
+    },
+    "risks": [],
+    "selected_option": "OPT-1",
+    "tags": [
+      "decision",
+      "alternatives",
+      "outcome:accepted"
+    ],
+    "title": "Решение по приоритету работ для fvg3_long_15m.py.",
+    "validation": [
+      {
+        "check": "Validate feasibility and impact of selected option OPT-1 before marking accepted.",
+        "status": "pending"
+      }
+    ]
+  },
+  "decision_commit_id": "DECCMT-01KHPQ11D743BJ6HGABVNN3RDS",
+  "decision_seq": 4,
+  "generated_at": "2026-02-17T21:10:16Z",
+  "link_suggestions": [
+    {
+      "confidence": 0.3876,
+      "layer": "KG",
+      "node_id": "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW",
+      "title": "Пользователь попросил изучить скрипт fvg3_long_15m.py и дать экспертную оценку."
+    },
+    {
+      "confidence": 0.3831,
+      "layer": "TG",
+      "node_id": "TG-TASK-01KHPPX08RR87DEE7FPYNBW3BW",
+      "title": "Clarify scope and constraints"
+    }
+  ],
+  "source": {
+    "source_digest": "9d8f393abdb0668a42a023fb56a7fde92994d6daf9441c42f9c69d12e918dd48",
+    "source_key": "decision::default",
+    "source_kind": "decision_text",
+    "source_title": "Decision input"
+  },
+  "source_request_hash_norm": "cd0e70dab079c95a0e87653926f8de5d7c2e43064582c24a714fd7906efe50af",
+  "source_request_hash_raw": "9d8f393abdb0668a42a023fb56a7fde92994d6daf9441c42f9c69d12e918dd48",
+  "stats": {
+    "alternatives_parsed": 2,
+    "apply_requested": true,
+    "link_suggestions": 2,
+    "selected_option": "OPT-1"
+  },
+  "warnings": []
+}

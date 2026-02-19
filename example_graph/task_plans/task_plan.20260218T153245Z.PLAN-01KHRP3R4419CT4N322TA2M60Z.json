@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-02-18T15:32:45Z",
+  "intent": "plan",
+  "link_suggestions": [
+    {
+      "confidence": 0.2235,
+      "layer": "KG",
+      "node_id": "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW",
+      "title": "Пользователь попросил изучить скрипт fvg3_long_15m.py и дать экспертную оценку."
+    },
+    {
+      "confidence": 0.2189,
+      "layer": "TG",
+      "node_id": "TG-TASK-01KHPPX08RR87DEE7FPYNBW3BW",
+      "title": "Clarify scope and constraints"
+    },
+    {
+      "confidence": 0.2152,
+      "layer": "RG",
+      "node_id": "RG-DEC-01KHPQ11D9Z2EXTWZEJDKR90T1",
+      "title": "Решение по приоритету работ для fvg3_long_15m.py."
+    },
+    {
+      "confidence": 0.0444,
+      "layer": "KG",
+      "node_id": "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1",
+      "title": "Graphs are authoritative memory"
+    },
+    {
+      "confidence": 0.041,
+      "layer": "KG",
+      "node_id": "KG-FACT-01KHPPXPP626J95PY728VNRJ2F",
+      "title": "Пользователь задал обязательный процесс 3LG: использовать initialize-graphs, build-context-pa..."
+    }
+  ],
+  "plan_id": "PLAN-01KHRP3R4419CT4N322TA2M60Z",
+  "plan_seq": 3,
+  "source_request_hash": "da2991d8a918d42693db5661878f402ca7dc443b0329338bc51d1eafa3586532",
+  "tasks": [
+    {
+      "acceptance_criteria": [
+        "A scoped objective statement is recorded in task description",
+        "At least one explicit non-goal or constraint is documented in task inputs"
+      ],
+      "blocks": [],
+      "dependencies": [],
+      "description": "Extract concrete target, constraints, and success criteria from request: Разбить монолитный скрипт fvg3_long_15m.py на модульную архитектуру без потери функцион...",
+      "inputs": {
+        "kg_refs": [
+          "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW",
+          "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1",
+          "KG-FACT-01KHPPXPP626J95PY728VNRJ2F"
+        ],
+        "rg_refs": [
+          "RG-DEC-01KHPQ11D9Z2EXTWZEJDKR90T1"
+        ],
+        "sources": []
+      },
+      "outputs": {
+        "artifacts": [],
+        "kg_updates": [],
+        "rg_updates": []
+      },
+      "owner_role": "lead",
+      "phase": "setup",
+      "priority": "high",
+      "status": "ready",
+      "tags": [
+        "planned",
+        "phase:setup"
+      ],
+      "temp_id": "TEMP-1",
+      "title": "Clarify scope and constraints",
+      "type": "task"
+    },
+    {
+      "acceptance_criteria": [
+        "Task decomposition contains 3-10 actionable items",
+        "Dependency edges are acyclic and every dependency references a valid task id"
+      ],
+      "blocks": [],
+      "dependencies": [
+        "TEMP-1"
+      ],
+      "description": "Translate scoped objective into actionable steps, owners, and dependency order.",
+      "inputs": {
+        "kg_refs": [
+          "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW",
+          "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1",
+          "KG-FACT-01KHPPXPP626J95PY728VNRJ2F"
+        ],
+        "rg_refs": [
+          "RG-DEC-01KHPQ11D9Z2EXTWZEJDKR90T1"
+        ],
+        "sources": []
+      },
+      "outputs": {
+        "artifacts": [],
+        "kg_updates": [],
+        "rg_updates": []
+      },
+      "owner_role": "build",
+      "phase": "implement",
+      "priority": "high",
+      "status": "ready",
+      "tags": [
+        "planned",
+        "phase:implement"
+      ],
+      "temp_id": "TEMP-2",
+      "title": "Prepare execution plan and work breakdown",
+      "type": "task"
+    },
+    {
+      "acceptance_criteria": [
+        "Each task has 2-4 measurable acceptance criteria",
+        "Validation report states pass/fail for dependency and DoD quality checks"
+      ],
+      "blocks": [],
+      "dependencies": [
+        "TEMP-2"
+      ],
+      "description": "Check all tasks for measurable DoD and graph-contract compliance before execution.",
+      "inputs": {
+        "kg_refs": [
+          "KG-FACT-01KHPPXPP6MAPSC53JGTY50JFW",
+          "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1",
+          "KG-FACT-01KHPPXPP626J95PY728VNRJ2F"
+        ],
+        "rg_refs": [
+          "RG-DEC-01KHPQ11D9Z2EXTWZEJDKR90T1"
+        ],
+        "sources": []
+      },
+      "outputs": {
+        "artifacts": [],
+        "kg_updates": [],
+        "rg_updates": []
+      },
+      "owner_role": "qa",
+      "phase": "verify",
+      "priority": "medium",
+      "status": "ready",
+      "tags": [
+        "planned",
+        "phase:verify"
+      ],
+      "temp_id": "TEMP-3",
+      "title": "Validate planned tasks and Definition of Done",
+      "type": "task"
+    }
+  ],
+  "warnings": []
+}

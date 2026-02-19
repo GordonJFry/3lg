@@ -1,0 +1,71 @@
+{
+  "decision_candidate": {
+    "alternatives": [],
+    "assumptions": [],
+    "context": "Decision topic: Prioritization for fvg3_long_15m.py. Alternative A: Implement fixes for four critical risks first (deterministic trade ordering for compounding, remove FeatureLibrary method shadowing, fix multi-symbol None handling, add 1h interval parsing support), then rerun checks. Alternative B: Keep current implementation unchanged and only document caveats. Recommended: Alternative A. Rat...",
+    "decision": "Decision remains proposed with no final selection yet.",
+    "decision_key": "decision::project::fvg_test::decision topic prioritization for fvg3 long 15m py",
+    "decision_payload_hash": "8aef4bae6904211aa326ea6f9df919e898ec34b6c06b3fffb056be7cc1bcb2dc",
+    "links": [],
+    "outcome": {
+      "notes": "Decision recorded by commit-decisions.",
+      "status": "proposed",
+      "supersedes": []
+    },
+    "rationale": [
+      "Rationale: Current risks can materially distort strategy ranking, reproducibility, and runtime stability."
+    ],
+    "refs": {
+      "artifacts": [],
+      "kg_refs": [],
+      "tg_refs": []
+    },
+    "risks": [
+      "Alternative A: Implement fixes for four critical risks first (deterministic trade ordering for compounding, remove FeatureLibrary method shadowing, fix multi-symbol None handling, add 1h interval parsing support), then rerun checks.",
+      "Rationale: Current risks can materially distort strategy ranking, reproducibility, and runtime stability."
+    ],
+    "selected_option": "undecided",
+    "tags": [
+      "decision",
+      "alternatives",
+      "outcome:proposed"
+    ],
+    "title": "Decision topic: Prioritization for fvg3_long_15m.py.",
+    "validation": [
+      {
+        "check": "Alternative A: Implement fixes for four critical risks first (deterministic trade ordering for compounding, remove FeatureLibrary method shadowing, fix multi-symbol None handling, add 1h interval parsing support), then rerun checks.",
+        "status": "pending"
+      }
+    ]
+  },
+  "decision_commit_id": "DECCMT-01KHPPY8J9A4X6T5Z12V6D6VRG",
+  "decision_seq": 1,
+  "followup_task_suggestion": {
+    "description": "Select concrete option_id and update decision outcome explicitly.",
+    "tags": [
+      "decision_followup"
+    ],
+    "title": "Finalize proposed decision selection"
+  },
+  "generated_at": "2026-02-17T21:08:45Z",
+  "link_suggestions": [],
+  "source": {
+    "source_digest": "0eebd9d8eafb42cd98e4cf9f872ca84dd025f0f75d7f8d7215748be676726e7d",
+    "source_key": "decision::default",
+    "source_kind": "decision_file",
+    "source_title": "Decision input"
+  },
+  "source_request_hash_norm": "cfd23ad8b1b5bbfed16e9ff9fdd39b8aa26ca8e40756107d8e9a371670650db9",
+  "source_request_hash_raw": "0eebd9d8eafb42cd98e4cf9f872ca84dd025f0f75d7f8d7215748be676726e7d",
+  "stats": {
+    "alternatives_parsed": 0,
+    "apply_requested": false,
+    "link_suggestions": 0,
+    "selected_option": "undecided"
+  },
+  "warnings": [
+    "No KG references resolved",
+    "No TG references resolved",
+    "Selected option unresolved; outcome remains proposed unless explicitly changed"
+  ]
+}

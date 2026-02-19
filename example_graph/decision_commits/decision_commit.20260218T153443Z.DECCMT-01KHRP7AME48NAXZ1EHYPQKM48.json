@@ -1,0 +1,78 @@
+{
+  "decision_candidate": {
+    "alternatives": [],
+    "assumptions": [],
+    "context": "Decision key: decision::fvg3_long_15m::modularization_strategy. Options: OPT-1 - Prepare decomposition checklist and characterization tests first, then split incrementally. OPT-2 - Split immediately without baseline tests. Decision: Select OPT-1 because functionality must be preserved.",
+    "decision": "Decision remains proposed with no final selection yet.",
+    "decision_key": "decision::project::fvg_test::decision key decision fvg3 long 15m modularization strategy options opt 1 prepare decomposition checklist and",
+    "decision_payload_hash": "7592a7f8e3b7de21c1b61c08e9a248e6573030d2b19f0fd52187f95b96c451a2",
+    "links": [
+      "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC"
+    ],
+    "outcome": {
+      "notes": "Decision recorded by commit-decisions.",
+      "status": "proposed",
+      "supersedes": []
+    },
+    "rationale": [
+      "Decision key: decision::fvg3_long_15m::modularization_strategy. Options: OPT-1 - Prepare decomposition checklist and characterization tests first, then split incrementally. OPT-2 - Split immediately without baseline tests. Decision: Select OPT-1 because functionality must be preserved."
+    ],
+    "refs": {
+      "artifacts": [],
+      "kg_refs": [
+        "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC"
+      ],
+      "tg_refs": []
+    },
+    "risks": [],
+    "selected_option": "undecided",
+    "tags": [
+      "decision",
+      "alternatives",
+      "outcome:proposed"
+    ],
+    "title": "Decision key: decision::fvg3_long_15m::modularization_strategy. Options: OPT-1 - Prepare decomposition checklist and...",
+    "validation": [
+      {
+        "check": "Decision key: decision::fvg3_long_15m::modularization_strategy. Options: OPT-1 - Prepare decomposition checklist and characterization tests first, then split incrementally. OPT-2 - Split immediately without baseline tests. Decision: Select OPT-1 because functionality must be preserved.",
+        "status": "pending"
+      }
+    ]
+  },
+  "decision_commit_id": "DECCMT-01KHRP7AME48NAXZ1EHYPQKM48",
+  "decision_seq": 7,
+  "followup_task_suggestion": {
+    "description": "Select concrete option_id and update decision outcome explicitly.",
+    "tags": [
+      "decision_followup"
+    ],
+    "title": "Finalize proposed decision selection"
+  },
+  "generated_at": "2026-02-18T15:34:43Z",
+  "link_suggestions": [
+    {
+      "confidence": 0.2474,
+      "layer": "KG",
+      "node_id": "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC",
+      "title": "User requests to decompose monolithic script fvg3_long_15m.py into modular architecture using..."
+    }
+  ],
+  "source": {
+    "source_digest": "2d01c3559e485ba064bd33b5736714528fa5ccb312c990ed7c5069e8772a25bb",
+    "source_key": "decision::default",
+    "source_kind": "decision_text",
+    "source_title": "Decision input"
+  },
+  "source_request_hash_norm": "f48069225bff8ccadc87ad3887f588a66521bbd6738e214a4f0dc05a56d02351",
+  "source_request_hash_raw": "2d01c3559e485ba064bd33b5736714528fa5ccb312c990ed7c5069e8772a25bb",
+  "stats": {
+    "alternatives_parsed": 0,
+    "apply_requested": false,
+    "link_suggestions": 1,
+    "selected_option": "undecided"
+  },
+  "warnings": [
+    "No TG references resolved",
+    "Selected option unresolved; outcome remains proposed unless explicitly changed"
+  ]
+}

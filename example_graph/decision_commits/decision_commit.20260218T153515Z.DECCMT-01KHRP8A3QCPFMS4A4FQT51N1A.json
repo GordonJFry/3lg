@@ -1,0 +1,89 @@
+{
+  "decision_candidate": {
+    "alternatives": [
+      {
+        "cons": [],
+        "option_id": "OPT-1",
+        "pros": [],
+        "title": "Prepare decomposition checklist and characterization tests first"
+      },
+      {
+        "cons": [],
+        "option_id": "OPT-2",
+        "pros": [],
+        "title": "Split code immediately without baseline tests"
+      },
+      {
+        "cons": [],
+        "option_id": "OPT-3",
+        "pros": [],
+        "title": "Prepare decomposition checklist and characterization tests first. Option B: Split code immediately without baseline tests"
+      }
+    ],
+    "assumptions": [],
+    "context": "Option A: Prepare decomposition checklist and characterization tests first. Option B: Split code immediately without baseline tests.",
+    "decision": "Select OPT-1: Prepare decomposition checklist and characterization tests first",
+    "decision_key": "decision::fvg3_long_15m::modularization_strategy",
+    "decision_payload_hash": "9149f0f6dd883d2faae041f6019b64b6cfdce8ed43e8cff01e7df65d3e2c6ad3",
+    "links": [
+      "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC"
+    ],
+    "outcome": {
+      "notes": "Decision recorded by commit-decisions.",
+      "status": "proposed",
+      "supersedes": []
+    },
+    "rationale": [
+      "Selected option OPT-1 (Prepare decomposition checklist and characterization tests first) based on provided alternatives."
+    ],
+    "refs": {
+      "artifacts": [],
+      "kg_refs": [
+        "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC"
+      ],
+      "tg_refs": []
+    },
+    "risks": [],
+    "selected_option": "OPT-1",
+    "tags": [
+      "decision",
+      "alternatives",
+      "outcome:proposed"
+    ],
+    "title": "Option A: Prepare decomposition checklist and characterization tests first. Option B: Split code immediately without...",
+    "validation": [
+      {
+        "check": "Option A: Prepare decomposition checklist and characterization tests first. Option B: Split code immediately without baseline tests.",
+        "status": "pending"
+      }
+    ]
+  },
+  "decision_commit_id": "DECCMT-01KHRP8A3QCPFMS4A4FQT51N1A",
+  "decision_seq": 8,
+  "generated_at": "2026-02-18T15:35:15Z",
+  "link_suggestions": [
+    {
+      "confidence": 0.2879,
+      "layer": "KG",
+      "node_id": "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC",
+      "title": "User requests to decompose monolithic script fvg3_long_15m.py into modular architecture using..."
+    }
+  ],
+  "source": {
+    "source_digest": "55d433c9508ee516222b2ded9cd3e184aed16f7f4e90a26580e850916fc30aa4",
+    "source_key": "decision::default",
+    "source_kind": "decision_text",
+    "source_title": "Decision input"
+  },
+  "source_request_hash_norm": "f7fbe84da93b90431ff45b783c21ec246bb4e8c6a50eafff75be34f4eea94752",
+  "source_request_hash_raw": "55d433c9508ee516222b2ded9cd3e184aed16f7f4e90a26580e850916fc30aa4",
+  "stats": {
+    "alternatives_parsed": 3,
+    "apply_requested": true,
+    "link_suggestions": 1,
+    "selected_option": "OPT-1"
+  },
+  "warnings": [
+    "No TG references resolved"
+  ]
+}

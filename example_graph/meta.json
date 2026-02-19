@@ -1,0 +1,22 @@
+{
+  "clock": "utc",
+  "created_at": "2026-02-17T21:07:38Z",
+  "id_prefixes": {
+    "kg": "KG-<TYPE>-<ULID>",
+    "rg": "RG-DEC-<ULID>",
+    "tg": "TG-TASK-<ULID>"
+  },
+  "id_strategy": "prefix+ulid",
+  "initializer_version": "0.1.0",
+  "project_name": "fvg_test",
+  "project_root": "/Users/anatolylobkov/Coding/fvg_test",
+  "schema_versions": {
+    "conflict": "1.0.0",
+    "context_pack": "1.0.0",
+    "kg": "1.0.0",
+    "rg": "1.0.0",
+    "tg": "1.0.0"
+  },
+  "skill_version": "0.1.0",
+  "store_version": "1.0.0"
+}

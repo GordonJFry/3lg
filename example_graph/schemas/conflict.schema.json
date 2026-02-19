@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "created_at": {
+      "type": "string"
+    },
+    "evidence": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "id": {
+      "type": "string"
+    },
+    "node_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "resolution_task_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "status": {
+      "type": "string"
+    },
+    "tags": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "title": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "status",
+    "created_at",
+    "updated_at",
+    "node_ids",
+    "evidence",
+    "resolution_task_ids"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": true,
+  "properties": {
+    "active_tasks": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "commit_id": {
+      "type": "string"
+    },
+    "decision_snapshot": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "goal": {
+      "type": "string"
+    },
+    "knowledge_snapshot": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "recent_deltas": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "task_snapshot": {
+      "items": {
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "goal",
+    "generated_at",
+    "commit_id",
+    "active_tasks",
+    "task_snapshot",
+    "knowledge_snapshot",
+    "decision_snapshot",
+    "recent_deltas"
+  ],
+  "type": "object"
+}

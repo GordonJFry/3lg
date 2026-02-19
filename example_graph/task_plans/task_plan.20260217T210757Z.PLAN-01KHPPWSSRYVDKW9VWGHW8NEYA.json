@@ -1,0 +1,186 @@
+{
+  "generated_at": "2026-02-17T21:07:57Z",
+  "intent": "execute",
+  "link_suggestions": [
+    {
+      "confidence": 0.0338,
+      "layer": "KG",
+      "node_id": "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1",
+      "title": "Graphs are authoritative memory"
+    }
+  ],
+  "plan_id": "PLAN-01KHPPWSSRYVDKW9VWGHW8NEYA",
+  "plan_seq": 1,
+  "source_request_hash": "7b326e598c0163d4e0361615720e4f9ef9c5038b9a1c33ac04b03a1f5dfc89a5",
+  "tasks": [
+    {
+      "acceptance_criteria": [
+        "A scoped objective statement is recorded in task description",
+        "At least one explicit non-goal or constraint is documented in task inputs"
+      ],
+      "blocks": [],
+      "dependencies": [],
+      "description": "Extract concrete target, constraints, and success criteria from request: Подготовить и выполнить исправления критичных рисков в fvg3_long_15m.py: детерминирован...",
+      "inputs": {
+        "kg_refs": [
+          "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1"
+        ],
+        "rg_refs": [],
+        "sources": []
+      },
+      "outputs": {
+        "artifacts": [],
+        "kg_updates": [],
+        "rg_updates": []
+      },
+      "owner_role": "lead",
+      "phase": "setup",
+      "priority": "high",
+      "status": "ready",
+      "tags": [
+        "planned",
+        "phase:setup"
+      ],
+      "temp_id": "TEMP-1",
+      "title": "Clarify scope and constraints",
+      "type": "task"
+    },
+    {
+      "acceptance_criteria": [
+        "Task decomposition contains 3-10 actionable items",
+        "Dependency edges are acyclic and every dependency references a valid task id"
+      ],
+      "blocks": [],
+      "dependencies": [
+        "TEMP-1"
+      ],
+      "description": "Translate scoped objective into actionable steps, owners, and dependency order.",
+      "inputs": {
+        "kg_refs": [
+          "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1"
+        ],
+        "rg_refs": [],
+        "sources": []
+      },
+      "outputs": {
+        "artifacts": [],
+        "kg_updates": [],
+        "rg_updates": []
+      },
+      "owner_role": "build",
+      "phase": "implement",
+      "priority": "high",
+      "status": "ready",
+      "tags": [
+        "planned",
+        "phase:implement"
+      ],
+      "temp_id": "TEMP-2",
+      "title": "Prepare execution plan and work breakdown",
+      "type": "task"
+    },
+    {
+      "acceptance_criteria": [
+        "Each task has 2-4 measurable acceptance criteria",
+        "Validation report states pass/fail for dependency and DoD quality checks"
+      ],
+      "blocks": [],
+      "dependencies": [
+        "TEMP-2"
+      ],
+      "description": "Check all tasks for measurable DoD and graph-contract compliance before execution.",
+      "inputs": {
+        "kg_refs": [
+          "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1"
+        ],
+        "rg_refs": [],
+        "sources": []
+      },
+      "outputs": {
+        "artifacts": [],
+        "kg_updates": [],
+        "rg_updates": []
+      },
+      "owner_role": "qa",
+      "phase": "verify",
+      "priority": "medium",
+      "status": "ready",
+      "tags": [
+        "planned",
+        "phase:verify"
+      ],
+      "temp_id": "TEMP-3",
+      "title": "Validate planned tasks and Definition of Done",
+      "type": "task"
+    },
+    {
+      "acceptance_criteria": [
+        "A plain-language summary is attached to plan output",
+        "Each task title has a one-sentence explanation understandable by non-developers"
+      ],
+      "blocks": [],
+      "dependencies": [
+        "TEMP-4"
+      ],
+      "description": "Capture assumptions, links, and completion criteria for non-technical handoff.",
+      "inputs": {
+        "kg_refs": [
+          "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1"
+        ],
+        "rg_refs": [],
+        "sources": []
+      },
+      "outputs": {
+        "artifacts": [],
+        "kg_updates": [],
+        "rg_updates": []
+      },
+      "owner_role": "lead",
+      "phase": "docs",
+      "priority": "low",
+      "status": "ready",
+      "tags": [
+        "planned",
+        "phase:docs"
+      ],
+      "temp_id": "TEMP-5",
+      "title": "Document plan decisions and handoff details",
+      "type": "task"
+    },
+    {
+      "acceptance_criteria": [
+        "Applied TG tasks include origin_plan_id and created_by metadata",
+        "TG index rebuild verification returns pass status"
+      ],
+      "blocks": [],
+      "dependencies": [
+        "TEMP-3"
+      ],
+      "description": "Optionally append planned tasks to TG with idempotency and index verification.",
+      "inputs": {
+        "kg_refs": [
+          "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1"
+        ],
+        "rg_refs": [],
+        "sources": []
+      },
+      "outputs": {
+        "artifacts": [],
+        "kg_updates": [],
+        "rg_updates": []
+      },
+      "owner_role": "ops",
+      "phase": "deploy",
+      "priority": "medium",
+      "status": "ready",
+      "tags": [
+        "planned",
+        "phase:deploy"
+      ],
+      "temp_id": "TEMP-4",
+      "title": "Apply approved task plan to Task Graph",
+      "type": "task"
+    }
+  ],
+  "warnings": []
+}

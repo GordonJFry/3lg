@@ -1,0 +1,4 @@
+interface:
+  display_name: "Commit Decisions"
+  short_description: "Commit deterministic decisions to RG"
+  default_prompt: "Use $commit-decisions to convert alternatives into a deterministic RG decision record linked to KG and TG."

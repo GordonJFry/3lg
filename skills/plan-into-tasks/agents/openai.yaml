@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Into Tasks"
+  short_description: "Decompose requests into TG tasks"
+  default_prompt: "Use $plan-into-tasks to convert a request into TG tasks with dependencies and measurable DoD."

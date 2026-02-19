@@ -1,0 +1,80 @@
+{
+  "decision_candidate": {
+    "alternatives": [],
+    "assumptions": [],
+    "context": "Options: 1) Split monolith immediately with high risk and no regression baseline. 2) First create modularization checklist and characterization tests to lock current behavior, then split safely. Recommended: Option 2 because user requires no functionality loss.",
+    "decision": "Decision remains proposed with no final selection yet.",
+    "decision_key": "decision::project::fvg_test::options 1 split monolith immediately with high risk and no regression baseline 2 first create modularization chec",
+    "decision_payload_hash": "749d99ab1b27f12ced70e56b96f3ec76a612be443e7c99f936ade11051733c17",
+    "links": [
+      "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC"
+    ],
+    "outcome": {
+      "notes": "Decision recorded by commit-decisions.",
+      "status": "proposed",
+      "supersedes": []
+    },
+    "rationale": [
+      "Options: 1) Split monolith immediately with high risk and no regression baseline. 2) First create modularization checklist and characterization tests to lock current behavior, then split safely. Recommended: Option 2 because user requires no functionality loss."
+    ],
+    "refs": {
+      "artifacts": [],
+      "kg_refs": [
+        "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC"
+      ],
+      "tg_refs": []
+    },
+    "risks": [
+      "Options: 1) Split monolith immediately with high risk and no regression baseline. 2) First create modularization checklist and characterization tests to lock current behavior, then split safely. Recommended: Option 2 because user requires no functionality loss."
+    ],
+    "selected_option": "undecided",
+    "tags": [
+      "decision",
+      "alternatives",
+      "outcome:proposed"
+    ],
+    "title": "Options: 1) Split monolith immediately with high risk and no regression baseline. 2) First create modularization chec...",
+    "validation": [
+      {
+        "check": "Options: 1) Split monolith immediately with high risk and no regression baseline. 2) First create modularization checklist and characterization tests to lock current behavior, then split safely. Recommended: Option 2 because user requires no functionality loss.",
+        "status": "pending"
+      }
+    ]
+  },
+  "decision_commit_id": "DECCMT-01KHRP618B3K4MSBYD33APP8WP",
+  "decision_seq": 5,
+  "followup_task_suggestion": {
+    "description": "Select concrete option_id and update decision outcome explicitly.",
+    "tags": [
+      "decision_followup"
+    ],
+    "title": "Finalize proposed decision selection"
+  },
+  "generated_at": "2026-02-18T15:34:00Z",
+  "link_suggestions": [
+    {
+      "confidence": 0.234,
+      "layer": "KG",
+      "node_id": "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC",
+      "title": "User requests to decompose monolithic script fvg3_long_15m.py into modular architecture using..."
+    }
+  ],
+  "source": {
+    "source_digest": "c183deefcb5f450b7c9fd9f0c3cedeb7146e2eac08c69fa5a5f60da9abfbd3f0",
+    "source_key": "decision::default",
+    "source_kind": "decision_text",
+    "source_title": "Decision input"
+  },
+  "source_request_hash_norm": "1eb4826beaa5f42c0819be93022cdc8ae44beaa5f23dc11f6061bb0441a4952d",
+  "source_request_hash_raw": "c183deefcb5f450b7c9fd9f0c3cedeb7146e2eac08c69fa5a5f60da9abfbd3f0",
+  "stats": {
+    "alternatives_parsed": 0,
+    "apply_requested": false,
+    "link_suggestions": 1,
+    "selected_option": "undecided"
+  },
+  "warnings": [
+    "No TG references resolved",
+    "Selected option unresolved; outcome remains proposed unless explicitly changed"
+  ]
+}

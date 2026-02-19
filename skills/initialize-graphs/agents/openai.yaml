@@ -1,0 +1,4 @@
+interface:
+  display_name: "Initialize 3-Layer Graphs"
+  short_description: "Bootstrap and repair 3-layer graph stores"
+  default_prompt: "Use $initialize-graphs to initialize, repair, and validate a 3-layer graph store in this repository."

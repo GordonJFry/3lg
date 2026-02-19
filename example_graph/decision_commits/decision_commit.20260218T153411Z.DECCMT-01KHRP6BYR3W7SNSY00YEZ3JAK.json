@@ -1,0 +1,85 @@
+{
+  "decision_candidate": {
+    "alternatives": [
+      {
+        "cons": [],
+        "option_id": "OPT-1",
+        "pros": [],
+        "title": "Start splitting files immediately without test baseline.\\nOption B: Prepare decomposition checklist and characterization tests first, then split modules incrementally.\\nSelected: Option B"
+      }
+    ],
+    "assumptions": [],
+    "context": "Decision key: decision::fvg3_long_15m::modularization_strategy\\nOption A: Start splitting files immediately without test baseline.\\nOption B: Prepare decomposition checklist and characterization tests first, then split modules incrementally.\\nSelected: Option B",
+    "decision": "Decision remains proposed with no final selection yet.",
+    "decision_key": "decision::project::fvg_test::decision key decision fvg3 long 15m modularization strategy noption a start splitting files immediately without t",
+    "decision_payload_hash": "574c89794f781e9cad561151f99319e61d6171da5640566fa2d0a00e9fe7e6f6",
+    "links": [
+      "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC"
+    ],
+    "outcome": {
+      "notes": "Decision recorded by commit-decisions.",
+      "status": "proposed",
+      "supersedes": []
+    },
+    "rationale": [
+      "Decision recorded from provided alternatives; rationale details should be expanded if needed."
+    ],
+    "refs": {
+      "artifacts": [],
+      "kg_refs": [
+        "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC"
+      ],
+      "tg_refs": []
+    },
+    "risks": [],
+    "selected_option": "undecided",
+    "tags": [
+      "decision",
+      "alternatives",
+      "outcome:proposed"
+    ],
+    "title": "Decision key: decision::fvg3_long_15m::modularization_strategy\\nOption A: Start splitting files immediately without t...",
+    "validation": [
+      {
+        "check": "Decision key: decision::fvg3_long_15m::modularization_strategy\\nOption A: Start splitting files immediately without test baseline.\\nOption B: Prepare decomposition checklist and characterization tests first, then split modules incrementally.\\nSelected: Option B",
+        "status": "pending"
+      }
+    ]
+  },
+  "decision_commit_id": "DECCMT-01KHRP6BYR3W7SNSY00YEZ3JAK",
+  "decision_seq": 6,
+  "followup_task_suggestion": {
+    "description": "Select concrete option_id and update decision outcome explicitly.",
+    "tags": [
+      "decision_followup"
+    ],
+    "title": "Finalize proposed decision selection"
+  },
+  "generated_at": "2026-02-18T15:34:11Z",
+  "link_suggestions": [
+    {
+      "confidence": 0.2783,
+      "layer": "KG",
+      "node_id": "KG-FACT-01KHRP4TAC96RT51H29RYD8AMC",
+      "title": "User requests to decompose monolithic script fvg3_long_15m.py into modular architecture using..."
+    }
+  ],
+  "source": {
+    "source_digest": "7b41d9c61238435ff6e2cdeecf56314cc36a9aaeb22bf5b5714c1263c0c1c9cb",
+    "source_key": "decision::default",
+    "source_kind": "decision_text",
+    "source_title": "Decision input"
+  },
+  "source_request_hash_norm": "c0c00297d3edfffd9da43ba39be35c7ffcff6d65a9928bcdd2d662d8003dd2c4",
+  "source_request_hash_raw": "7b41d9c61238435ff6e2cdeecf56314cc36a9aaeb22bf5b5714c1263c0c1c9cb",
+  "stats": {
+    "alternatives_parsed": 1,
+    "apply_requested": false,
+    "link_suggestions": 1,
+    "selected_option": "undecided"
+  },
+  "warnings": [
+    "No TG references resolved",
+    "Selected option unresolved; outcome remains proposed unless explicitly changed"
+  ]
+}

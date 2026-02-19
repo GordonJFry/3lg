@@ -1,0 +1,96 @@
+{
+  "active_tasks": [
+    "TG-TASK-01KHPPW6E1CMX4K5DYJB2W19Y7",
+    "TG-TASK-01KHPPW6E1DDQD8S7FXBM7YM6H",
+    "TG-TASK-01KHPPW6E13Q7N20WWTR486DB4"
+  ],
+  "commit_id": "COMMIT-01KHPPW6E4XTFXDBS59KQT8PBE",
+  "decision_snapshot": [
+    {
+      "decision": "Use append-only JSONL node logs as authority and rebuildable indexes as derived artifacts.",
+      "id": "RG-DEC-01KHPPW6E14T450T2984X9R9AM",
+      "status": "accepted",
+      "title": "Use append-only JSONL with derived indexes"
+    }
+  ],
+  "generated_at": "2026-02-17T21:07:38Z",
+  "goal": "Maintain Context Pack for each meaningful interaction",
+  "knowledge_snapshot": [
+    {
+      "confidence": 0.0,
+      "id": "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1",
+      "summary": "Treat KG/RG/TG as the source of truth; do not rely on chat transcript for long-term memory.",
+      "title": "Graphs are authoritative memory"
+    },
+    {
+      "confidence": 0.0,
+      "id": "KG-DEFINITION-01KHPPW6E1N5TZAFAAKGE5A7G3",
+      "summary": "Knowledge Graph stores facts, Reasoning Graph stores decisions, Task Graph stores execution state.",
+      "title": "Three-layer graph model"
+    }
+  ],
+  "recent_deltas": [
+    {
+      "change": "added_or_updated",
+      "id": "KG-CONSTRAINT-01KHPPW6E1KYW4FYKBB22BZSQ1",
+      "layer": "KG"
+    },
+    {
+      "change": "added_or_updated",
+      "id": "KG-DEFINITION-01KHPPW6E1N5TZAFAAKGE5A7G3",
+      "layer": "KG"
+    },
+    {
+      "change": "added_or_updated",
+      "id": "RG-DEC-01KHPPW6E14T450T2984X9R9AM",
+      "layer": "RG"
+    },
+    {
+      "change": "added_or_updated",
+      "id": "TG-TASK-01KHPPW6E1CMX4K5DYJB2W19Y7",
+      "layer": "TG"
+    },
+    {
+      "change": "added_or_updated",
+      "id": "TG-TASK-01KHPPW6E1DDQD8S7FXBM7YM6H",
+      "layer": "TG"
+    },
+    {
+      "change": "added_or_updated",
+      "id": "TG-TASK-01KHPPW6E13Q7N20WWTR486DB4",
+      "layer": "TG"
+    }
+  ],
+  "task_snapshot": [
+    {
+      "acceptance_criteria": [
+        "context_pack.latest.json points to newest commit_id",
+        "A timestamped context pack history file is written"
+      ],
+      "deps": [],
+      "id": "TG-TASK-01KHPPW6E1CMX4K5DYJB2W19Y7",
+      "status": "ready",
+      "title": "Maintain Context Pack for each meaningful interaction"
+    },
+    {
+      "acceptance_criteria": [
+        "post_response_commits.jsonl has commit_id per meaningful response",
+        "Each commit entry includes changed node ids"
+      ],
+      "deps": [],
+      "id": "TG-TASK-01KHPPW6E1DDQD8S7FXBM7YM6H",
+      "status": "ready",
+      "title": "Record post-response commits"
+    },
+    {
+      "acceptance_criteria": [
+        "Every conflict record has at least one TG resolution task",
+        "Resolution tasks include tag conflict_resolution"
+      ],
+      "deps": [],
+      "id": "TG-TASK-01KHPPW6E13Q7N20WWTR486DB4",
+      "status": "ready",
+      "title": "Resolve graph conflicts via tagged tasks"
+    }
+  ]
+}

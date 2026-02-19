@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review & Consolidate"
+  short_description: "Periodic graph cleanup and safe consolidation"
+  default_prompt: "Use $review-and-consolidate to archive stale tasks, supersede duplicate decisions, and resolve conflicts with graph-safe rules."
