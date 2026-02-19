@@ -1,8 +1,11 @@
 # 3LG (Three-Layer Graph) as a Long-Horizon Memory and Control Substrate for LLM Agents
 
 Version: 1.0 (draft for scientific manuscript)  
-Project root: `/Users/anatolylobkov/Coding/fvg_test`  
+Project root: `$PROJECT_ROOT`  
 Prepared for: research paper drafting
+
+> Document role: **Non-normative scientific draft**.
+> Normative SSOT: `docs/3-layer_graph.md`.
 
 ---
 
@@ -722,50 +725,50 @@ flowchart TD
 
 ## 19. Operational Command Appendix
 
-Note: absolute paths shown for reproducibility in this project.
+Note: commands below use repository-local scripts. Set `PROJECT_ROOT` to your cloned repo path.
 
 ### Initialize / repair / reset
 
 ```bash
-/Users/anatolylobkov/.codex/skills/initialize-graphs/scripts/init_graphs.py --project-root /Users/anatolylobkov/Coding/fvg_test --mode init
-/Users/anatolylobkov/.codex/skills/initialize-graphs/scripts/init_graphs.py --project-root /Users/anatolylobkov/Coding/fvg_test --mode repair
-/Users/anatolylobkov/.codex/skills/initialize-graphs/scripts/init_graphs.py --project-root /Users/anatolylobkov/Coding/fvg_test --mode reset
+python3 "$PROJECT_ROOT/skills/initialize-graphs/scripts/init_graphs.py" --project-root "$PROJECT_ROOT" --mode init
+python3 "$PROJECT_ROOT/skills/initialize-graphs/scripts/init_graphs.py" --project-root "$PROJECT_ROOT" --mode repair
+python3 "$PROJECT_ROOT/skills/initialize-graphs/scripts/init_graphs.py" --project-root "$PROJECT_ROOT" --mode reset
 ```
 
 ### Build request context
 
 ```bash
-/Users/anatolylobkov/.codex/skills/build-context-pack/scripts/build_context_pack.py --project-root /Users/anatolylobkov/Coding/fvg_test --request-text "<request>"
+python3 "$PROJECT_ROOT/skills/build-context-pack/scripts/build_context_pack.py" --project-root "$PROJECT_ROOT" --request-text "<request>"
 ```
 
 ### Plan tasks
 
 ```bash
-/Users/anatolylobkov/.codex/skills/plan-into-tasks/scripts/plan_into_tasks.py --project-root /Users/anatolylobkov/Coding/fvg_test --request-text "<request>"
+python3 "$PROJECT_ROOT/skills/plan-into-tasks/scripts/plan_into_tasks.py" --project-root "$PROJECT_ROOT" --request-text "<request>"
 ```
 
 ### Commit knowledge
 
 ```bash
-/Users/anatolylobkov/.codex/skills/commit-knowledge/scripts/commit_knowledge.py --project-root /Users/anatolylobkov/Coding/fvg_test --conversation-text "<conversation>"
+python3 "$PROJECT_ROOT/skills/commit-knowledge/scripts/commit_knowledge.py" --project-root "$PROJECT_ROOT" --conversation-text "<conversation>"
 ```
 
 ### Commit decision
 
 ```bash
-/Users/anatolylobkov/.codex/skills/commit-decisions/scripts/commit_decisions.py --project-root /Users/anatolylobkov/Coding/fvg_test --decision-text "<alternatives + selected>"
+python3 "$PROJECT_ROOT/skills/commit-decisions/scripts/commit_decisions.py" --project-root "$PROJECT_ROOT" --decision-text "<alternatives + selected>"
 ```
 
 ### Review and consolidate
 
 ```bash
-/Users/anatolylobkov/.codex/skills/review-and-consolidate/scripts/review_consolidate.py --project-root /Users/anatolylobkov/Coding/fvg_test --apply true
+python3 "$PROJECT_ROOT/skills/review-and-consolidate/scripts/review_consolidate.py" --project-root "$PROJECT_ROOT" --apply true
 ```
 
 ### Validate invariants
 
 ```bash
-/Users/anatolylobkov/.codex/skills/initialize-graphs/scripts/validate_graphs.py --project-root /Users/anatolylobkov/Coding/fvg_test
+python3 "$PROJECT_ROOT/skills/initialize-graphs/scripts/validate_graphs.py" --project-root "$PROJECT_ROOT"
 ```
 
 ---
@@ -787,12 +790,11 @@ Note: absolute paths shown for reproducibility in this project.
 
 ## 22. References to Project Artifacts
 
-- Base operating manual: `/Users/anatolylobkov/Coding/fvg_test/3-layer_graph.md`
+- Base operating manual (SSOT): `docs/3-layer_graph.md`
 - Skills:
-  - `/Users/anatolylobkov/.codex/skills/initialize-graphs/SKILL.md`
-  - `/Users/anatolylobkov/.codex/skills/build-context-pack/SKILL.md`
-  - `/Users/anatolylobkov/.codex/skills/plan-into-tasks/SKILL.md`
-  - `/Users/anatolylobkov/.codex/skills/commit-knowledge/SKILL.md`
-  - `/Users/anatolylobkov/.codex/skills/commit-decisions/SKILL.md`
-  - `/Users/anatolylobkov/.codex/skills/review-and-consolidate/SKILL.md`
-
+  - `skills/initialize-graphs/SKILL.md`
+  - `skills/build-context-pack/SKILL.md`
+  - `skills/plan-into-tasks/SKILL.md`
+  - `skills/commit-knowledge/SKILL.md`
+  - `skills/commit-decisions/SKILL.md`
+  - `skills/review-and-consolidate/SKILL.md`

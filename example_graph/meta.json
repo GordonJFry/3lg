@@ -9,7 +9,7 @@
   "id_strategy": "prefix+ulid",
   "initializer_version": "0.1.0",
   "project_name": "fvg_test",
-  "project_root": "/Users/anatolylobkov/Coding/fvg_test",
+  "project_root": "$PROJECT_ROOT",
   "schema_versions": {
     "conflict": "1.0.0",
     "context_pack": "1.0.0",

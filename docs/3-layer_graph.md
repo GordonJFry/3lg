@@ -2,6 +2,9 @@
 
 *(Knowledge Graph + Reasoning Graph + Task Graph)*
 
+> Document role: **Normative SSOT** for 3LG operational behavior.
+> Companion (non-normative): `docs/3lg_scientific_paper_draft.md`.
+
 ## 0) Purpose
 
 You are an LLM that must operate on long-running projects without relying on a growing linear chat log. You will maintain three external, structured layers:

@@ -245,7 +245,7 @@
   "knowledge_seq": 2,
   "source": {
     "source_digest": "a0a2d8a9f43c6f68556f5784d133db8ed714f276e24e9378be0626cefb415638",
-    "source_key": "file::/Users/anatolylobkov/Coding/fvg_test/.generated/3lg_conversation_snapshot.txt",
+    "source_key": "file::$PROJECT_ROOT/.generated/3lg_conversation_snapshot.txt",
     "source_kind": "conversation_file",
     "source_node_id": null,
     "source_title": "3lg_conversation_snapshot.txt"

@@ -1138,9 +1138,10 @@ def maybe_refresh_request_context(
         print("[DRY-RUN] refresh request context via build-context-pack")
         return
 
+    codex_home = Path(os.environ.get("CODEX_HOME", str(Path.home() / ".codex")))
     candidate_scripts = [
         project_root / ".generated/skills/build-context-pack/scripts/build_context_pack.py",
-        Path("/Users/anatolylobkov/.codex/skills/build-context-pack/scripts/build_context_pack.py"),
+        codex_home / "skills/build-context-pack/scripts/build_context_pack.py",
     ]
 
     script = None
