@@ -1,4 +1,4 @@
-# 3LG: Skills + Example Graph + Research Draft
+# 3LG: Skills + Example Graph
 
 Public repository package for the 3LG (Three-Layer Graph) approach.
 
